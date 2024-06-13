@@ -3,10 +3,12 @@
 
 ## Learn More 
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Langchain, take a look at the following resources:
+(https://www.pinecone.io/)
+(https://ably.com/)
+(https://fingerprint.com/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
 
 
 
