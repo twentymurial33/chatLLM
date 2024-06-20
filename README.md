@@ -19,7 +19,8 @@
 
 Please use the [issue tracker](https://github.com/) to report any bugs or file feature requests.
 
-
+## Start the development server
+npm run dev
 
 
 
