@@ -1,17 +1,26 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-datasource db {
-  provider = "cockroachdb"
-  url      = env("DATABASE_URL")
-}
-
 generator client {
   provider = "prisma-client-js"
 }
 
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+/// This model or at least one of its fields has comments in the database, and requires an additional setup for migrations: Read more: https://pris.ly/d/database-comments
+model persons {
+  personid  BigInt?
+  lastname  String? @db.VarChar(255)
+  firstname String? @db.VarChar(255)
+  address   String? @db.VarChar(255)
+  city      String? @db.VarChar(255)
+
+  @@ignore
+}
+
 model User {
-  id    Int    @id
-  name  String
-  email String @unique
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
 }

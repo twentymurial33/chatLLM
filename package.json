@@ -6,23 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "prisma migrate deploy"
   },
   "dependencies": {
     "@pinecone-database/pinecone": "^2.2.2",
+    "@prisma/client": "^5.15.1",
     "ably": "^2.1.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
   },
+  "prisma": {
+    "seed": "ts-node prisma/seed.js"
+  },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.14.8",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
+    "prisma": "^4.2.1",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
   }
 }
