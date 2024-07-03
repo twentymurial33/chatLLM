@@ -17,10 +17,6 @@
 ![image](https://github.com/twentymurial33/chatllm/assets/34128735/6c573f32-1f6e-4555-aa21-9a1d82ec29b7)
 
 
-#### Bug Reports & Feature Requests
-
-Please use the [issue tracker](https://github.com/) to report any bugs or file feature requests.
-
 ## Start the development server
 npm run dev
 
