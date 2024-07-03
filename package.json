@@ -10,12 +10,16 @@
     "deploy": "prisma migrate deploy"
   },
   "dependencies": {
+    "@fingerprintjs/fingerprintjs-pro": "^3.9.9",
     "@pinecone-database/pinecone": "^2.2.2",
     "@prisma/client": "^5.15.1",
     "ably": "^2.1.0",
+    "cheerio": "^1.0.0-rc.12",
+    "langchain": "^0.2.8",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "url-parse": "^1.5.10"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.js"
